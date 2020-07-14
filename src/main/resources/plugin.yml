@@ -1,0 +1,28 @@
+name: ZQVIP
+main: cn.yzq25.vip.VIPMain
+version: "1.1.0"
+api: ["1.0.0"]
+load: POSTWORLD
+
+author: Yanziqing25
+description: VIP插件
+website: http://www.yzq25.cn
+
+softdepend:
+- ZQExtension
+depend:
+- ZQExtension
+
+permissions:
+  vip.command.addvip:
+    description: "添加VIP"
+    default: op
+  vip.command.addsvip:
+      description: "添加SVIP"
+      default: op
+  vip.command.removevip:
+    description: "删除VIP/SVIP"
+    default: op
+  vip.command.svip.fly:
+    description: "SVIP飞行"
+    default: true
